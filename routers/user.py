@@ -95,6 +95,7 @@ async def create_new_user(create_user: CreateUser, db: Session = Depends(get_db)
     create_user_model.year_born = create_user.year_born
     create_user_model.phone_number = create_user.phone_number
     create_user_model.is_active = True
+    create_user_model.role = create_user.role
 
     db.add(create_user_model)
     db.commit()

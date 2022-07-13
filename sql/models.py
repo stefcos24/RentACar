@@ -16,7 +16,7 @@ class Users(Base):
     year_born = Column(Integer)
     phone_number = Column(String)
     is_active = Column(Boolean, default=True)
-    role = Column(String, nullable=False)
+    role = Column(String, nullable=True)
 
     cars = relationship('Cars', back_populates='user')
     reviews = relationship('Reviews', back_populates='author')

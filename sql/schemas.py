@@ -11,6 +11,7 @@ class CreateUser(BaseModel):
     password: str = Field(min_length=7)
     year_born: int = Field(gt=1950, lt=(date.today().year + 1) - 18)
     phone_number: str
+    role: str
 
 
 class Cars(BaseModel):
