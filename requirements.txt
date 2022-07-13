@@ -49,7 +49,6 @@ pyodbc==4.0.32
 python-dateutil==2.8.2
 python-jose==3.3.0
 python-multipart==0.0.5
-pywin32==303
 pyzmq==22.3.0
 rsa==4.8
 six==1.16.0
